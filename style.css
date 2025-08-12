@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .calculator{
@@ -29,6 +29,7 @@
     height: 40%;
     background-color: antiquewhite;
     padding: 10px;
+    
 }
 
 #numInput{
@@ -37,6 +38,7 @@
     font-size: 2.5rem;
     border-radius: 5px;
     background-color: rgb(251, 252, 253);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .key-box{
@@ -49,6 +51,7 @@
     align-content: center;
     justify-content: space-around;
 }
+
 
 button{
     border: none;
@@ -75,6 +78,15 @@ button{
 
 #zero-key{
     flex-grow: 1;
+}
+
+#bracket-key{
+    display: none;
+}
+
+#submit-key{
+    background-color: rgb(1, 201, 25);
+    color: #ffff;
 }
 
 @media (max-width: 1252px) {
