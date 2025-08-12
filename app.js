@@ -14,8 +14,9 @@ document.querySelectorAll("button").forEach(btn => {
             num_Input.textContent = expression;
         }
         else{     
-        expression += btn.value; //add clicked value
-        num_Input.textContent = expression;
+            expression += btn.value; //add clicked value
+            num_Input.textContent = expression;
+            
         }
     });
 });
