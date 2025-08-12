@@ -16,7 +16,12 @@ const eight_key = document.getElementById('eight-key');
 const nine_key = document.getElementById('nine-key');
 const zero_key = document.getElementById('zero-key');
 
+
+let isScientific = false;
+
+
 scientific_calc.addEventListener("click", () =>{
+    if(!isScientific){
     one_key.value = "sin";
     one_key.textContent = "Sin";
     two_key.value = "cos";
@@ -41,6 +46,39 @@ scientific_calc.addEventListener("click", () =>{
     zero_key.textContent = "(";
 
     bracket_key.style.display = "block"; // display's ')'
+
+    isScientific = true;
+    }
+    else{
+
+        one_key.value = "1";
+        one_key.textContent = "1";
+        two_key.value = "2";
+        two_key.textContent = "2";
+        three_key.value = "3";
+        three_key.textContent = "3";
+        four_key.value = "4";
+        four_key.textContent = "4";
+        five_key.value = "5";
+        five_key.textContent = "5";
+        six_key.value = "6";
+        six_key.textContent = "6";
+        seven_key.value = "7";
+        seven_key.textContent = "7";
+        eight_key.value = "8";
+        eight_key.textContent = "8";
+        nine_key.value = "9";
+        nine_key.textContent = "9";
+
+        zero_key.style.flexGrow = 1;
+        zero_key.value = "0";
+        zero_key.textContent = "0";
+
+        bracket_key.style.display = "none";
+
+        isScientific = false;
+    }
+   
 
 });
 
